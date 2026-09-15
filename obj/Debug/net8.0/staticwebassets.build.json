@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "bWoY1S43ThTbSKLbDbqI872mVL5wGFLOuAZno1/ppZY=",
+  "Source": "ServiceFlow.API",
+  "BasePath": "_content/ServiceFlow.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
