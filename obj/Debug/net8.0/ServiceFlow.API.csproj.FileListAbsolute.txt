@@ -31,3 +31,4 @@ C:\Users\User\Documents\Vs Code Projects\ServiceFlow\ServiceFlow.API\obj\Debug\n
 C:\Users\User\Documents\Vs Code Projects\ServiceFlow\ServiceFlow.API\obj\Debug\net8.0\ServiceFlow.API.pdb
 C:\Users\User\Documents\Vs Code Projects\ServiceFlow\ServiceFlow.API\obj\Debug\net8.0\ServiceFlow.API.genruntimeconfig.cache
 C:\Users\User\Documents\Vs Code Projects\ServiceFlow\ServiceFlow.API\obj\Debug\net8.0\ref\ServiceFlow.API.dll
+C:\Users\User\Documents\Vs Code Projects\ServiceFlow\ServiceFlow.API\obj\Debug\net8.0\ServiceFlow.API.sourcelink.json
