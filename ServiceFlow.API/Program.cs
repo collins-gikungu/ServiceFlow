@@ -4,10 +4,12 @@ using ServiceFlow.API.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Database configuration
+var password = builder.Configuration["MSSQL_SA_PASSWORD"];
+
 var connectionString = builder.Configuration
     .GetConnectionString("DefaultConnection")!
-    .Replace("PLACEHOLDER", Environment.GetEnvironmentVariable("MSSQL_SA_PASSWORD"));
-
+    .Replace("PLACEHOLDER", password);
+    
 builder.Services.AddDbContext<ServiceFlowDbContext>(options =>
     options.UseSqlServer(connectionString));
 
