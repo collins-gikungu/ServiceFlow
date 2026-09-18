@@ -1,16 +1,9 @@
-# Build results
-[Bb]in/
-[Oo]bj/
-[Dd]ebug/
-[Rr]elease/
-x64/
-x86/
-build/
-bld/
-[Ll]og/
-[Ll]ogs/
+# =========================
+# .NET / Visual Studio
+# =========================
 
-# Visual Studio / VS Code
+bin/
+obj/
 .vs/
 .vscode/
 *.user
@@ -18,49 +11,53 @@ bld/
 *.userosscache
 *.sln.docstates
 
-# Rider
-.idea/
-*.sln.iml
+# =========================
+# ASP.NET Core
+# =========================
 
-# NuGet
-*.nupkg
-*.snupkg
-packages/
-!packages/build/
-project.lock.json
-project.fragment.lock.json
-artifacts/
+appsettings.Development.json
+appsettings.Local.json
 
-# .NET Core
-project.lock.json
-project.fragment.lock.json
-artifacts/
-*.runtimeconfig.json
-*.deps.json
+# =========================
+# Environment / Secrets
+# =========================
 
-# Publish
-publish/
-*.pubxml
-*.publishproj
-
-# Environment / secrets
 .env
 .env.*
 !.env.example
-appsettings.*.local.json
-secrets.json
 
+# =========================
 # Docker
-*.pid
+# =========================
+
 docker-compose.override.yml
 
-# OS files
+# =========================
+# Logs
+# =========================
+
+*.log
+logs/
+
+# =========================
+# OS generated files
+# =========================
+
 .DS_Store
 Thumbs.db
-desktop.ini
+Desktop.ini
 
-# Node (in case you add a frontend later)
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# =========================
+# Test / Coverage
+# =========================
+
+TestResults/
+coverage/
+
+# =========================
+# Temporary files
+# =========================
+
+*.tmp
+*.temp
+*.bak
