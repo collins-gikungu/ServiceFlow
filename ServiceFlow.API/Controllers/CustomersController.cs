@@ -32,4 +32,34 @@ public async Task<ActionResult<Customer>> CreateCustomer(Customer customer)
         new { id = customer.Id },
         customer);
 }
+[HttpGet("{id}")]
+public async Task<ActionResult<Customer>> GetCustomer(int id)
+{
+    var customer = await _context.Customers.FindAsync(id);
+
+    if (customer == null)
+    {
+        return NotFound();
+    }
+
+    return customer;
+}
+[HttpPut("{id}")]
+public async Task<IActionResult> UpdateCustomer(int id, Customer customer)
+{
+    var existingCustomer = await _context.Customers.FindAsync(id);
+
+    if (existingCustomer == null)
+    {
+        return NotFound();
+    }
+
+    existingCustomer.Name = customer.Name;
+    existingCustomer.Email = customer.Email;
+    existingCustomer.Phone = customer.Phone;
+
+    await _context.SaveChangesAsync();
+
+    return NoContent();
+}
 }
