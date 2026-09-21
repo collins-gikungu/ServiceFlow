@@ -21,4 +21,15 @@ public class CustomersController : ControllerBase
     {
         return await _context.Customers.ToListAsync();
     }
+    [HttpPost]
+public async Task<ActionResult<Customer>> CreateCustomer(Customer customer)
+{
+    _context.Customers.Add(customer);
+    await _context.SaveChangesAsync();
+
+    return CreatedAtAction(
+        nameof(GetCustomers),
+        new { id = customer.Id },
+        customer);
+}
 }
