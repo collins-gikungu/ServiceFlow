@@ -11,4 +11,5 @@ public class ServiceFlowDbContext : DbContext
     }
 
     public DbSet<Customer> Customers { get; set; }
+    public DbSet<ServiceRequest> ServiceRequests { get; set; }
 }
